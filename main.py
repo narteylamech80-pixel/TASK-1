@@ -116,9 +116,9 @@ for df, file in zip(cleaned, filenames):
     
     # Save file 
     if ext.lower() == ".xlsx":
-        df.to_excel(new_name, index=False)
+        df.to_excel(f"TASK 1/data/{new_name}", index=False)
     else:
-        df.to_csv(new_name, index=False)    
+        df.to_csv(f"TASK 1/data/{new_name}", index=False)    
 
 
 
